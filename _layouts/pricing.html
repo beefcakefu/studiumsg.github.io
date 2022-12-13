@@ -1,0 +1,90 @@
+---
+layout: default
+---
+<div class="cream">
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col text-center">
+				<h1 class="p-3 s-h1">{{ page.syllabus-header }}</h1>
+				<p class="p-3">{{ page.syllabus-byline }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-lg-10 text-center">
+				<div class="ratio ratio-16x9">
+					<iframe src="{{ page.video-link }}?rel=0" allowfullscreen></iframe>
+				</div>
+			</div>
+{% for block in page.video-blocks %}
+	<div class="col-lg-6 pt-5 pb-5">
+		<img class="p-3 float-start" src="{{ block.image }}">
+		<div class="p-3" style="overflow:hidden;">
+			<h4>{{ block.header }}</h4>
+			<p>{{ block.text }}</p>
+		</div>
+	</div>
+{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="cream">
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12 text-center">
+				<h1 class="s-h1">{{ page.comparison-header }}</h1>
+			</div>
+			<div class="col-lg-5 pt-5">
+				<div class="card bg-transparent border-0 pt-3">
+					<div class="card-body">
+						<h5 class="card-title text-center p-3">{{ page.comparison-group-header }}</h5>
+						<div class="card-text">
+							<ul class="fa-ul px-5">
+{% for item in page.comparison-group-list %}
+	<li class="m-4"><span class="fa-li"><i class="fa-regular fa-circle-xmark"></i></span>{{ item | markdownify }}</li>
+{% endfor %}
+							</ul>
+							<p class="px-5 m-4">{{ page.comparison-group-footer }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 pt-5">
+				<div class="card pt-3">
+					<div class="card-body">
+						<h5 class="card-title text-center p-3">{{ page.comparison-studium-header }}</h5>
+						<div class="card-text">
+							<ul class="fa-ul px-5">
+{% for item in page.comparison-studium-list %}
+	<li class="m-4"><span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>{{ item | markdownify }}</li>
+{% endfor %}
+							</ul>
+							<p class="px-5 text-center"><s>{{ page.comparison-regular-price }}</s> <span class="h2 ssg-green">{{ page.comparison-current-price }}</span> {{ page.comparison-studium-footer }}<br><br><a class="btn btn-success m-3 ssg-green" role="button" href="/pricing/">{{ page.comparison-button }}</a></p>
+						</div>
+						<img style="position:absolute; top:0; right:0;" src="/assets/images/best-value.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12 text-center">
+				<h1 class="p-3 s-h1">{{ page.content-header }}</h1>
+				<p class="p-3">{{ page.content-byline }}</p>
+			</div>
+{% for topic in page.content-topics %}
+	<div class="col-lg-4 col-md-6 p-3">
+		<h4>{{ topic.title }}</h4>
+		<p>{{ topic.text | markdownify }}</p>
+		<img src="{{ topic.image }}">
+	</div>
+{% endfor %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg bg-white">
+	<div class="container-xl">
+		<a class="navbar-brand{% if page.url == "/" %} active" aria-current="page{% endif %}" href="/"><img src="/assets/images/logo.svg"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="main-menu">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+{% for item in site.data.navigation %}
+	<li class="nav-item">
+		<a class="nav-link{% if page.url == item.link %} active" aria-current="page{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+	</li>
+{% endfor %}
+			</ul>
+			<div class="d-flex">
+				<a class="link-secondary text-decoration-none{% if page.url == "/login/" %} active" aria-current="page{% endif %}" href="/login/">Bought the videos already? <span class="ssg-green">Log in</span></a>
+			</div>
+		</div>
+	</div>
+</nav>

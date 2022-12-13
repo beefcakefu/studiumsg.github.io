@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="cream">
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12 text-center">
+				<h1 class="p-3 s-h1">{{ page.faq-header }}</h1>
+				<p class="p-3">{{ page.faq-byline }}</p>
+			</div>
+			<div class="col-lg-8 col-md-10 p-5">
+{% for faq in page.faqs %}
+	<div class="faq p-4">
+		<p class="question">{{ faq.question }} <a href="#"><i class="fa-solid fa-circle-plus" style="float: right;"></i></a></p>
+		<p class="answer" id="faq{{ forloop.index }}">{{faq.answer }}</p>
+	</div>
+{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12 text-center">
+				<h4 class="p-3">{{ page.questions-header }}</h4>
+				<p class="p-3">{{ page.questions-byline }}</p>
+				<p class="p-3"><i class="fa-regular fa-envelope"></i> Email us at <a class="ssg-green-link text-decoration-none" href="mailto:{{ page.questions-email }}">{{ page.questions-email }}</a></p>
+				<p class="p-3"><i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Call or WhatsApp us at <a class="ssg-green-link text-decoration-none" href="https://wa.me/+65{{ page.questions-number }}" target="_blank">{{ page.questions-number }}</a></p>
+			</div>
+		</div>
+	</div>
+</div>

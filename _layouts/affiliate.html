@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="cream">
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12">
+				<img class="img-fluid p-3" src="{{ page.hero-image }}">
+			</div>
+			<div class="col-12 text-center">
+				<h1 class="p-3">{{ page.hero-header }}</h1>
+				<p class="p-3">{{ page.hero-byline }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12 text-center">
+				<h4 class="p-3">{{ page.how-it-works-header }}</h4>
+				<p class="p-3">{{ page.how-it-works-byline | markdownify }}</p>
+				<a class="btn btn-success m-3 ssg-green" role="button" href="#">{{ page.how-it-works-button }}</a>
+			</div>
+		</div>
+	</div>
+</div>

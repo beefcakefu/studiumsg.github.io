@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="cream">
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12">
+				<img class="img-fluid p-3" src="{{ page.hero-image }}">
+			</div>
+			<div class="col-12 text-center">
+				<h1 class="p-3">{{ page.hero-header }}</h1>
+				<p class="p-3">{{ page.hero-byline }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="container-xl">
+		<div class="row justify-content-center pt-5 pb-5">
+			<div class="col-12 text-center">
+				<h4 class="p-3">{{ page.contact-header }}</h4>
+				<p class="p-3">{{ page.contact-byline | markdownify }}</p>
+				<p class="p-3"><i class="fa-regular fa-envelope"></i> Email us at <a class="ssg-green-link text-decoration-none" href="mailto:{{ page.contact-email }}">{{ page.contact-email }}</a></p>
+				<p class="p-3"><i class="fa-solid fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> Call or WhatsApp us at <a class="ssg-green-link text-decoration-none" href="https://wa.me/+65{{ page.contact-number }}" target="_blank">{{ page.contact-number }}</a></p>
+			</div>
+		</div>
+	</div>
+</div>
