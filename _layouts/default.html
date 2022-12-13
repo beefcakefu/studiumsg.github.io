@@ -27,7 +27,7 @@
 					answer.style.display = 'none';
 					button.addEventListener('click', function handleClick(event) {
 						event.preventDefault();
-						if(answer.style.display == 'block') {
+						if (answer.style.display == 'block') {
 							answer.style.display = 'none';
 							icon.classList.remove('fa-circle-minus');
 							icon.classList.add('fa-circle-plus');
@@ -38,6 +38,24 @@
 						}
 					});
 				});
+
+				const who = document.getElementById('who-radio');
+				const student = document.querySelector('fieldset.student');
+				const myselfs = document.querySelectorAll('div.myself');
+				who.addEventListener('click',
+					({ target }) => {
+						if (target.getAttribute('value') === 'myself') {
+							student.style.display = 'none';
+							myselfs.forEach(myself => {
+								myself.style.display = 'block';
+							});
+						} else {
+							student.style.display = 'block';
+							myselfs.forEach(myself => {
+								myself.style.display = 'none';
+							});
+						}
+					});
 			}, false);
 		</script>
 	</body>
