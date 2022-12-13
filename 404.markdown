@@ -1,6 +1,10 @@
 ---
-permalink: /404
-title: Top class tutoring through a self-paced programme that puts learning in the palm of your hand
+#############
+# Meta Data #
+#############
+permalink: "/404"
+title: "Top class tutoring through a self-paced programme that puts learning in the palm of your hand"
+layout: "default"
 ---
 
 <style type="text/css" media="screen">

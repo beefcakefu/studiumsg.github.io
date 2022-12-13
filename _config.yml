@@ -5,3 +5,4 @@ description: >-
 baseurl: ""
 url: "https://staging.studiumsg.com"
 domain: "staging.studiumsg.com"
+permalink: pretty
