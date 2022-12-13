@@ -52,6 +52,7 @@ comparison-studium-list:
   - "Studium’s Videos are priced at $1999 for the lot, until you graduate."
   - "That’s less than what you would pay for a tutor in a year."
   - "Plus, if you buy now before <strong>20TH OCTOBER 2023</strong>, we’ll give it to you at $1199!"
+  - "<img src=\"/assets/images/pay-later.png\">"
 comparison-regular-price: "$1999"
 comparison-current-price: "$1199"
 comparison-studium-footer: "/until you graduate"
