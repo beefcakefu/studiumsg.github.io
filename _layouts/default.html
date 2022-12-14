@@ -42,7 +42,7 @@
 				const who = document.getElementById('who-radio');
 				const student = document.querySelector('fieldset.student');
 				const myselfs = document.querySelectorAll('div.myself');
-				who.addEventListener('click',
+				who && who.addEventListener('click',
 					({ target }) => {
 						if (target.getAttribute('value') === 'myself') {
 							student.style.display = 'none';
