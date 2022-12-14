@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<div class="cream">
+<div>
 	<div class="container-xl">
 		<div class="row justify-content-start pt-5 pb-5">
 			<div class="col-lg-7">
 				<h4 class="p-3">{{ page.hero-header-1 }}</h4>
 				<p class="p-3">{{ page.hero-byline-1 }}</p>
-				<h1 class="p-3 s-h1">{{ page.hero-header-2 }}</h1>
+				<h1 class="p-3">{{ page.hero-header-2 }}</h1>
 				<p class="p-3">{{ page.hero-byline-2 }}</p>
-				<a class="btn btn-success m-3 ssg-green" role="button" href="/pricing/">{{ page.hero-button }}</a>
+				<a class="btn btn-success m-3" role="button" href="/pricing/">{{ page.hero-button }}</a>
 			</div>
 			<div class="col-lg-5">
 				<img class="img-fluid p-3" src="{{ page.hero-image }}">
@@ -21,7 +21,7 @@ layout: default
 	<div class="container-xl">
 		<div class="row justify-content-start pt-5 pb-5">
 			<div class="col-lg-8">
-				<h1 class="p-3 s-h1">{{ page.syllabus-header }}</h1>
+				<h1 class="p-3">{{ page.syllabus-header }}</h1>
 				<p class="p-3">{{ page.syllabus-byline }}</p>
 			</div>
 			<div class="col-lg-4 pt-5 pb-5">
@@ -36,14 +36,14 @@ layout: default
 		</div>
 	</div>
 </div>
-<div class="cream">
+<div>
 	<div class="container-xl">
 		<div class="row justify-content-center pt-5 pb-5">
 			<div class="col-lg-10 text-center">
 				<div class="ratio ratio-16x9">
 					<iframe src="{{ page.video-link }}?rel=0" allowfullscreen></iframe>
 				</div>
-				<a class="btn btn-success mt-5 ssg-green" role="button" href="/pricing/">{{ page.video-button }}</a>
+				<a class="btn btn-success mt-5" role="button" href="/pricing/">{{ page.video-button }}</a>
 			</div>
 		</div>
 	</div>
@@ -52,7 +52,7 @@ layout: default
 	<div class="container-xl">
 		<div class="row justify-content-start pt-5 pb-5">
 			<div class="col-lg-6">
-				<h1 class="p-3 s-h1">{{ page.pedagogy-header }}</h1>
+				<h1 class="p-3">{{ page.pedagogy-header }}</h1>
 			</div>
 			<div class="col-lg-6 d-flex align-items-center">
 				<p class="p-5">{{ page.pedagogy-byline }}</p>
@@ -67,11 +67,11 @@ layout: default
 		</div>
 	</div>
 </div>
-<div class="cream">
+<div>
 	<div class="container-xl">
 		<div class="row justify-content-center pt-5 pb-5">
 			<div class="col-12 text-center">
-				<h1 class="s-h1">{{ page.comparison-header }}</h1>
+				<h1>{{ page.comparison-header }}</h1>
 			</div>
 			<div class="col-lg-5 pt-5">
 				<div class="card bg-transparent border-0 pt-3">
@@ -98,7 +98,7 @@ layout: default
 	<li class="m-4"><span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>{{ item | markdownify }}</li>
 {% endfor %}
 							</ul>
-							<p class="px-5 text-center"><s>{{ page.comparison-regular-price }}</s> <span class="h2 ssg-green">{{ page.comparison-current-price }}</span> {{ page.comparison-studium-footer }}<br><br><a class="btn btn-success m-3 ssg-green" role="button" href="/pricing/">{{ page.comparison-button }}</a></p>
+							<p class="px-5 text-center"><s>{{ page.comparison-regular-price }}</s> <span class="h2 ssg-green">{{ page.comparison-current-price }}</span> {{ page.comparison-studium-footer }}<br><br><a class="btn btn-success m-3" role="button" href="/pricing/">{{ page.comparison-button }}</a></p>
 						</div>
 						<img style="position:absolute; top:0; right:0;" src="/assets/images/best-value.svg">
 					</div>
@@ -111,8 +111,8 @@ layout: default
 	<div class="container-xl">
 		<div class="row justify-content-center pt-5">
 			<div class="col-12">
-				<h1 class="s-h1">{{ page.testimonial-header }}</h1>
-				<a class="text-decoration-none float-end s-h3 ssg-green" href="/testimonials/">{{ page.testimonial-link }}</a>
+				<h1>{{ page.testimonial-header }}</h1>
+				<a class="text-decoration-none float-end testimonial" href="/testimonials/">{{ page.testimonial-link }}</a>
 			</div>
 		</div>
 		<div class="row justify-content-evenly pb-5">

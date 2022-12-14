@@ -1,20 +1,50 @@
-.cream { background-color:#FAF8F6; }
-.btn.ssg-green { background-color:#20AD96; }
-span.ssg-green, .s-h3.ssg-green, .fa-circle-check, .fa-envelope, .fa-phone, .ssg-green-link, .fa-circle-plus, .fa-circle-minus { color:#20AD96; }
-.fa-star { color:#FEC84B; }
-.fa-circle-xmark { color:red; }
-.s-h1 { font-size:2rem; }
-.s-h3 { font-size:1rem; }
+@import "./variables";
+
+body>div:nth-child(even), footer {
+	background-color: $cream;
+}
+
+a.btn {
+	background-color: $studium-green;
+	&:hover {
+		background-color: $studium-green-hover;
+	}
+}
+
+.fa-circle-check, .fa-envelope, .fa-phone, .fa-circle-plus, .fa-circle-minus, .ssg-green {
+	color: $studium-green;
+}
+
+a.text-decoration-none, a span.ssg-green, a i {
+	color: $studium-green;
+	&:hover {
+		color: $studium-green-hover;
+	}
+}
+
+.fa-star { color:$star; }
+
+.fa-circle-xmark { color:$red; }
+
+/* Header resizing for screen */
+h1 { font-size:2rem; }
+.testimonial { font-size:1rem; }
+
 @media only screen and (min-width: 768px) {
-	.s-h1 { font-size:3rem; }
-	.s-h3 { font-size:1.5rem; }
+	h1 { font-size:3rem; }
+	.testimonial { font-size:1.5rem; }
 }
+
 @media only screen and (min-width: 992px) {
-	.s-h1 { font-size:4rem; }
-	.s-h3 { font-size:2rem; }
+	h1 { font-size:4rem; }
+	.testimonial { font-size:2rem; }
 }
+
+/* Social Media Icons */
 .fa-facebook { color:#1877f2; }
+
 .fa-youtube { color:#ff0000; }
+
 .fa-instagram {
 	color:transparent;
 	background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -22,10 +52,12 @@ span.ssg-green, .s-h3.ssg-green, .fa-circle-check, .fa-envelope, .fa-phone, .ssg
 	background-clip:text;
 	-webkit-background-clip:text;
 }
+
 .fa-tiktok {
 	color:#111111;
 	filter:drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
+
 .fa-whatsapp  {
 	color:#ffffff;
 	background:linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat, radial-gradient(#25d366 60%,transparent 0);
