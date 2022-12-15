@@ -40,23 +40,32 @@
 				});
 
 				const who = document.getElementById('who-radio');
-				const student = document.querySelector('fieldset.student');
-				const myselfs = document.querySelectorAll('div.myself');
+				const students = document.querySelectorAll('.student');
+				const myselfs = document.querySelectorAll('.myself');
 				who && who.addEventListener('click',
 					({ target }) => {
 						if (target.getAttribute('value') === 'myself') {
-							student.style.display = 'none';
+							students.forEach(student => {
+								student.style.display = 'none';
+							});
 							myselfs.forEach(myself => {
 								myself.style.display = 'block';
 							});
-						} else {
-							student.style.display = 'block';
+						} else if (target.getAttribute('value') === 'child' || target.getAttribute('value') === 'someone') {
+							students.forEach(student => {
+								student.style.display = 'block';
+							});
 							myselfs.forEach(myself => {
 								myself.style.display = 'none';
 							});
 						}
 					});
 			}, false);
+			const submit = document.querySelector('a.form-submit');
+			submit.addEventListener('click', function handleClick(event) {
+				event.preventDefault();
+				submit.closest('form').submit();
+			});
 		</script>
 	</body>
 </html>

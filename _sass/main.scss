@@ -22,6 +22,13 @@ a.text-decoration-none, a span.ssg-green, a i {
 	}
 }
 
+.form-check-input {
+	&:checked {
+		background-color: $studium-green;
+		border-color: $studium-green;
+	}
+}
+
 .fa-star { color:$star; }
 
 .fa-circle-xmark { color:$red; }
@@ -61,4 +68,9 @@ h1 { font-size:2rem; }
 .fa-whatsapp  {
 	color:#ffffff;
 	background:linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat, radial-gradient(#25d366 60%,transparent 0);
+}
+
+.form-group {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
