@@ -62,7 +62,7 @@ layout: default
 	<li class="m-4"><span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>{{ item | markdownify }}</li>
 {% endfor %}
 							</ul>
-							<p class="px-5 text-center"><s>{{ page.comparison-regular-price }}</s> <span class="h2 ssg-green">{{ page.comparison-current-price }}</span> {{ page.comparison-studium-footer }}<br><br><a class="btn btn-success m-3" role="button" href="/pricing/">{{ page.comparison-button }}</a></p>
+							<p class="px-5 text-center"><s>{{ page.comparison-regular-price }}</s> <span class="h2 ssg-green">{{ page.comparison-current-price }}</span> {{ page.comparison-studium-footer }}<br><br><a class="btn btn-success m-3" role="button" href="{{ page.comparison-button-link }}" target="_blank">{{ page.comparison-button }}</a></p>
 						</div>
 						<img style="position:absolute; top:0; right:0;" src="/assets/images/best-value.svg">
 					</div>

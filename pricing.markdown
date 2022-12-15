@@ -57,6 +57,7 @@ comparison-regular-price: "$1999"
 comparison-current-price: "$1199"
 comparison-studium-footer: "/until you graduate"
 comparison-button: "Buy Videos Now"
+comparison-button-link: "https://hitpay.shop/s/yx7gea"
 
 
 
