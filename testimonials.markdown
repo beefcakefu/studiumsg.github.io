@@ -30,11 +30,11 @@ video-button: "Check details and prices"
 testimonial-header: "Hear what our students say about us."
 testimonials:
 
- - name: "Jimmy, Caleb’s Father"
+  - name: "Jimmy, Caleb’s Father"
     stars: "5"
     text: "“My son Caleb did not attend any Math tuition for his entire primary school as I feel tuition teachers only teaches them shortcuts to solve a Math problem instead of understanding it. He had done well for PSLE but when he reach secondary school, the questions are getting more complex and he had difficulties catching up. My friend had introduced me to Studium and as skeptical as I was, I decided to try it due to my friend’s strong recommendation. I have to admit I am very impressed by Studium. Studium’s programme is the same as what I had hoped for. Truly understanding the concept and applying to the question. Caleb’s result improved tremendously from B3 to A1 within a year. Thank you Studium.”"
  
- - name: "Alden"
+  - name: "Alden"
     stars: "5"
     text: "“He definitely changed my perspective on what I could achieve and after attending his lessons, I feel so much more confident in my work.”"
 
