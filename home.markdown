@@ -12,7 +12,7 @@ layout: "home"
 # Hero #
 ########
 hero-header-1: "O Level E Math"
-hero-byline-1: "Top class tutoring through a self-paced programme that puts learning in the palm of your hand."
+hero-byline-1: "Top class tutoring through a self-paced "programme" that puts learning in the palm of your hand."
 
 hero-header-2: "Tutoring<br>for the Future"
 hero-byline-2: "Why put down your mobile phone, when it is your greatest tool for learning?"
