@@ -30,10 +30,10 @@ layout: default
 				<h1>{{ page.testimonial-header }}</h1>
 			</div>
 		</div>
-		<div class="row justify-content-evenly pb-5">
+		<div class="row pb-5" data-masonry='{"percentPosition": true }'>
 {% for testimonial in page.testimonials %}
-	<div class="col-lg-5 col-sm-10">
-		<div class="card m-4">
+	<div class="col-lg-6 col-sm-12">
+		<div class="card m-5">
 			<div class="card-body">
 				<p class="card-text">{{ testimonial.text }}<br><br><strong>{{ testimonial.name }}</strong><br>{% for i in (1..testimonial.stars) %}<i class="fa-solid fa-star"></i>{% endfor %}</p>
 			</div>
