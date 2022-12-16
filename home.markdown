@@ -32,7 +32,7 @@ syllabus-blocks:
 
   - image: "/assets/images/icon5.svg"
     header: "Watch anytime, anywhere"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    text: "Watch from your PC, watch from your mobile phone, watch it anywhere."
 
   - image: "/assets/images/icon6.svg"
     header: "Weekly online consultation"
