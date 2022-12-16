@@ -4,6 +4,12 @@ body>div:nth-child(even), footer {
 	background-color: $cream;
 }
 
+.pedagogy {
+	p {
+		text-align: justify;
+	}
+}
+
 a.btn {
 	background-color: $studium-green;
 	&:hover {
