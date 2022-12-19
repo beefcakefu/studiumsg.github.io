@@ -56,11 +56,13 @@
 						$('input[name="mobile1"').prop('required', false);
 						$('label[for="mobile1"]').text('Mobile');
 						$('select[name="level1"').prop('required', true);
+						$('select[name="stream1"').prop('required', true);
 						$('input[name="school1"').prop('required', true);
 						$('input[name="email2"').prop('required', false);
 						$('input[name="fname2"').prop('required', false);
 						$('input[name="lname2"').prop('required', false);
 						$('select[name="level2"').prop('required', false);
+						$('select[name="stream2"').prop('required', false);
 						$('input[name="school2"').prop('required', false);
 					} else if ($($e.target).val() === 'child' || $($e.target).val() === 'someone') {
 						$('.student').show();
@@ -68,11 +70,13 @@
 						$('input[name="mobile1"').prop('required', true);
 						$('label[for="mobile1"]').text('Mobile *');
 						$('select[name="level1"').prop('required', false);
+						$('select[name="stream1"').prop('required', false);
 						$('input[name="school1"').prop('required', false);
 						$('input[name="email2"').prop('required', true);
 						$('input[name="fname2"').prop('required', true);
 						$('input[name="lname2"').prop('required', true);
 						$('select[name="level2"').prop('required', true);
+						$('select[name="stream2"').prop('required', true);
 						$('input[name="school2"').prop('required', true);
 					}
 				});
