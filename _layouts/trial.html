@@ -19,20 +19,20 @@ layout: default
 		<div class="row justify-content-center pt-5 pb-5">
 			<div class="col-lg-8 col-sm-10">
 				<div class="card pt-3">
-					<form class="card-body p-5" action="https://www.google.com/" method="post">
+					<form class="card-body p-5 needs-validation" action="https://order.studiumsg.com/trial.php" method="post" id="trial-form" novalidate>
 						<fieldset class="form-group">
 							<legend>Who is this for? *</legend>
 							<div id="who-radio">
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="who" id="myself" value="myself" checked>
+									<input class="form-check-input" type="radio" name="who" value="myself" checked>
 									<label class="form-check-label" for="myself">For Myself</label>
 								</div>
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="who" id="child" value="child">
+									<input class="form-check-input" type="radio" name="who" value="child">
 									<label class="form-check-label" for="child">For My Child</label>
 								</div>
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="who" id="someone" value="someone">
+									<input class="form-check-input" type="radio" name="who" value="someone">
 									<label class="form-check-label" for="someone">For Someone Else</label>
 								</div>
 							</div>
@@ -41,70 +41,70 @@ layout: default
 							<hr class="my-5 student" style="display:none;">
 							<legend class="student" style="display:none;">Your Details</legend>
 							<div class="form-group">
-								<label for="email">Email Address *</label>
-								<input type="email" class="form-control email" id="email" name="email">
+								<label for="email1">Email Address *</label>
+								<input type="email" class="form-control email" name="email1" required>
 								<small class="text-muted student" style="display:none;">Your email will be used for communication between parents and teachers, and only students' emails will have access to view videos.</small>
 							</div>
 							<div class="form-group">
-								<label for="fname">First Name *</label>
-								<input class="form-control" id="fname" name="fname">
+								<label for="fname1">First Name *</label>
+								<input class="form-control" name="fname1" required>
 							</div>
 							<div class="form-group">
-								<label for="lname">Last Name *</label>
-								<input class="form-control" id="lname" name="lname">
+								<label for="lname1">Last Name *</label>
+								<input class="form-control" name="lname1" required>
 							</div>
 							<div class="form-group">
-								<label for="mobile">Mobile</label>
-								<input class="form-control" id="mobile" name="mobile">
+								<label for="mobile1">Mobile</label>
+								<input class="form-control" name="mobile1">
 							</div>
 							<div class="form-group myself">
-								<label for="level">Level *</label>
-								<select class="form-select" id="level">
-									<option value="not-applicable">Not Applicable</option>
+								<label for="level1">Level *</label>
+								<select class="form-select" name="level1" required>
+									<option value="" disabled selected hidden>Select an option</option>
 									<option value="o-levels">O Levels</option>
 									<option value="n-levels">N Levels</option>
 								</select>
 							</div>
 							<div class="form-group myself">
-								<label for="school">School</label>
-								<input class="form-control" id="school" name="school">
+								<label for="school1">School</label>
+								<input class="form-control" name="school1">
 							</div>
 						</fieldset>
 						<fieldset class="form-group student" style="display:none;">
 							<hr class="my-5">
 							<legend>Student Details</legend>
 							<div class="form-group">
-								<label for="email">Email Address *</label>
-								<input type="email" class="form-control email" id="email" name="email">
+								<label for="email2">Email Address *</label>
+								<input type="email" class="form-control email" name="email2">
 								<small class="text-muted">Students' emails will receive access to view videos.</small>
 							</div>
 							<div class="form-group">
-								<label for="fname">First Name *</label>
-								<input class="form-control" id="fname" name="fname">
+								<label for="fname2">First Name *</label>
+								<input class="form-control" name="fname2">
 							</div>
 							<div class="form-group">
-								<label for="lname">Last Name *</label>
-								<input class="form-control" id="lname" name="lname">
+								<label for="lname2">Last Name *</label>
+								<input class="form-control" name="lname2">
 							</div>
 							<div class="form-group">
-								<label for="mobile">Mobile</label>
-								<input class="form-control" id="mobile" name="mobile">
+								<label for="mobile2">Mobile</label>
+								<input class="form-control" name="mobile2">
 							</div>
 							<div class="form-group">
-								<label for="level">Level *</label>
-								<select class="form-select" id="level">
-									<option value="not-applicable">Not Applicable</option>
+								<label for="level2">Level *</label>
+								<select class="form-select" name="level2">
+									<option value="" disabled selected hidden>Select an option</option>
 									<option value="o-levels">O Levels</option>
 									<option value="n-levels">N Levels</option>
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="school">School</label>
-								<input class="form-control" id="school" name="school">
+								<label for="school2">School</label>
+								<input class="form-control" name="school2">
 							</div>
 						</fieldset>
 						<div class="text-center">
-							<a class="btn btn-success m-3 form-submit" role="button" href="#">Claim Your Free Trial</a>
+							<input class="btn btn-success m-3 form-submit" role="button" value="Claim Your Free Trial" type="submit">
 						</div>
 					</form>
 				</div>

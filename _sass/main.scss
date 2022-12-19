@@ -10,7 +10,7 @@ body>div:nth-child(even), footer {
 	}
 }
 
-a.btn {
+a.btn, input[type="submit"] {
 	background-color: $studium-green;
 	&:hover {
 		background-color: $studium-green-hover;
